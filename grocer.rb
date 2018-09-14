@@ -21,8 +21,8 @@ def apply_coupons(cart, coupons)
     if cart.has_key?(item)
       cart_item = cart[item]
       cart_item[:count] -= item[:num]
-      cart["#{item} W/COUPON"] = {price: coupon[:cost], clearance: cart_item[:clearance], count: 1}
       require 'pry';binding.pry
+      cart["#{item} W/COUPON"] = {price: coupon[:cost], clearance: cart_item[:clearance], count: 1}
     end
   end
 

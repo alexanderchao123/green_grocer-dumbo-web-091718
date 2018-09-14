@@ -16,9 +16,13 @@ end
 
 def apply_coupons(cart, coupons)
   require 'pry';binding.pry
-  # coupon_cart = {}
-  #
-  # result coupon_cart
+  coupon_cart = {}
+  
+  coupons.each do |coupon|
+    item_name = coupon[:item]
+  end
+  
+  result coupon_cart
 end
 
 def apply_clearance(cart)

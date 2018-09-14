@@ -16,10 +16,12 @@ end
 
 def apply_coupons(cart, coupons)
   # require 'pry';binding.pry
-  
+
   coupons.each do |coupon|
     item_name = coupon[:item]
-    cart
+    if cart.has_key?(item_name)
+      
+    end
   end
 
   result cart

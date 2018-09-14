@@ -15,14 +15,14 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  require 'pry';binding.pry
-  coupon_cart = {}
-
+  # require 'pry';binding.pry
+  
   coupons.each do |coupon|
     item_name = coupon[:item]
+    cart
   end
 
-  result coupon_cart
+  result cart
 end
 
 def apply_clearance(cart)

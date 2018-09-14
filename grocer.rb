@@ -18,9 +18,9 @@ def apply_coupons(cart, coupons)
   # require 'pry';binding.pry
 
   coupons.each do |coupon|
-    item_name = coupon[:item]
-    if cart.has_key?(item_name)
-      
+    item = coupon[:item]
+    if cart.has_key?(item)
+      cart["#{item} W/COUPON"]
     end
   end
 

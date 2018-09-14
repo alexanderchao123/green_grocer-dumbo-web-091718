@@ -15,7 +15,7 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  binding.pry
+  require 'pry';binding.pry
 end
 
 def apply_clearance(cart)

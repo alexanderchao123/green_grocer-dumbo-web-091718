@@ -19,10 +19,10 @@ def apply_coupons(cart, coupons)
   coupons.each do |coupon|
     item = coupon[:item]
     if cart.has_key?(item)
-      require 'pry';binding.pry
       cart_item = cart[item]
       cart_item[:count] -= item[:num]
       cart["#{item} W/COUPON"] = {price: coupon[:cost], clearance: cart_item[:clearance], count: 1}
+      require 'pry';binding.pry
     end
   end
 
